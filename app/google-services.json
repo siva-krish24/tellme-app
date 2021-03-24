@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "160927742188",
+    "firebase_url": "https://telme-6abae.firebaseio.com",
+    "project_id": "telme-6abae",
+    "storage_bucket": "telme-6abae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160927742188:android:c23c7f3653d27542700dc9",
+        "android_client_info": {
+          "package_name": "com.telme.tellme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160927742188-3k51dqvdgous8cr6cs5avln88nfmu9ik.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.telme.tellme",
+            "certificate_hash": "cd7ab7445f15a10ce4769c23957f707bcf16a5fd"
+          }
+        },
+        {
+          "client_id": "160927742188-eaajtq8mfedhshnnn4nnec053kan847t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFcqxC84rUV5xi1OJvvEu_XD66skBhg0M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160927742188-eaajtq8mfedhshnnn4nnec053kan847t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

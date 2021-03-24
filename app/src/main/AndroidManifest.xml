@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.telme.tellme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ManageUsersActivity"></activity>
+        <activity android:name=".UserNotAnsweredActivity" />
+        <activity android:name=".AdminUserDayListActivity" />
+        <activity android:name=".AdminUserStatsActivity" />
+        <activity android:name=".AdminUserMyClosedLeadsActivity" />
+        <activity android:name=".AdminUserMyLoginsActivity" />
+        <activity android:name=".AdminUserFollowUpsActivity" />
+        <activity android:name=".AdminUserHomeActivity" />
+        <activity android:name=".AdminUsersListActivity" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".MyClosedLeadsActivity" />
+        <activity android:name=".MyLoginsActivity" />
+        <activity android:name=".FollowUpDataActivity" />
+        <activity android:name=".FreshDataActivity" />
+        <activity
+            android:name=".UserHome"
+            android:label="@string/title_activity_user_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserRegActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

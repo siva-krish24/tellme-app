@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/freshdata_listitem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="showcontact"
+            android:text="Customer Name"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="showcontact"
+            android:text="Contact Number"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/variant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="VARIANT"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/hypo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="HYPO"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="379dp"
+            android:layout_height="114dp"
+            android:hint="Add more Details"
+            android:inputType="textMultiLine"
+            android:textSize="23sp" />
+
+        <TableRow
+            android:id="@+id/tablerow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+
+            <CheckBox
+                android:id="@+id/fresh_data_notanswered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Answered" />
+
+            <CheckBox
+                android:id="@+id/fresh_data_intrested"
+                android:layout_width="wrap_content"
+                android:text="Intrested" />
+
+            <CheckBox
+                android:id="@+id/fresh_data_notintrested"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Intrested" />
+
+        </TableRow>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

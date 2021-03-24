@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:padding="8dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/admin_user_followups_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="showcontact"
+            android:text="Customer Name"
+            android:textColor="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="showcontact"
+            android:text="Contact Number"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/variant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="VARIANT"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/hypo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="HYPO"
+            android:textSize="23sp" />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="379dp"
+            android:layout_height="114dp"
+            android:hint="Add more Details"
+            android:inputType="textMultiLine"
+            android:textSize="23sp" />
+
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="390dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="68dp"
+                android:layout_height="38dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="submit" />
+
+            <Button
+                android:id="@+id/makelogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="CustomerLogin" />
+
+            <Button
+                android:id="@+id/notintrested"
+                android:layout_width="112dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="NotIntrested" />
+        </TableRow>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

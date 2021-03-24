@@ -1,0 +1,46 @@
+    private void addItemsFromJSON() {
+        try {
+
+            String jsonDataString = readJSONDataFromFile();
+            JSONArray jsonArray = new JSONArray(jsonDataString);
+
+            for (int i=0; i<jsonArray.length(); ++i) {
+
+                JSONObject itemObj = jsonArray.getJSONObject(i);
+
+                String name = itemObj.getString("CUSTOMER NAME");
+                String mobile = itemObj.getString("CONTACT");
+                String varient = itemObj.getString("VARIANT");
+                String hypo = itemObj.getString("HYPO");
+
+                Holidays holidays = new Holidays(name, mobile,varient,hypo);
+                viewItems.add(holidays);
+            }
+
+        } catch (JSONException | IOException e) {
+            Log.d(TAG, "addItemsFromJSON: ", e);
+        }
+    }
+//    private String readJSONDataFromFile() throws IOException{
+//
+//        InputStream inputStream = null;
+//        StringBuilder builder = new StringBuilder();
+//
+//        try {
+//
+//            String jsonString = null;
+//            inputStream = getResources().openRawResource(R.raw.data);
+//            BufferedReader bufferedReader = new BufferedReader(
+//                    new InputStreamReader(inputStream, "UTF-8"));
+//
+//            while ((jsonString = bufferedReader.readLine()) != null) {
+//                builder.append(jsonString);
+//            }
+//
+//        } finally {
+//            if (inputStream != null) {
+//                inputStream.close();
+//            }
+//        }
+//        return new String(builder);
+//    }
